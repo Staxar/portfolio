@@ -1,6 +1,6 @@
 import React from "react";
 // import headerimg from "../assets/img/header-img.svg";
-import astronaut from "../assets/img/astronaut.png";
+import astronaut from "../assets/img/webp/astronaut.webp";
 import TypeAnimation from "react-type-animation";
 
 function Home() {
@@ -18,14 +18,15 @@ function Home() {
             <h1 className="text-6xl font-bold tracking-wide leading-none mb-5 block">
               Hi! I'm Marcin
             </h1>
-            <h1 className="text-6xl font-bold tracking-wide leading-none mb-5 block h-14">
+            <span className="text-6xl font-bold tracking-wide leading-none mb-5 block static h-14">
               <TypeAnimation
                 cursor={false}
-                sequence={["Web developer", 2000, "software engineer", 2000]}
+                component={"span"}
+                sequence={["Web Developer", 2000, "Software Engineer", 2000]}
                 wrapper="h2"
                 repeat={Infinity}
               />
-            </h1>
+            </span>
 
             <p className="text-lg tracking-wide	w-full">
               Lorem Ipsum is simply dummy text of the printing and typesetting
