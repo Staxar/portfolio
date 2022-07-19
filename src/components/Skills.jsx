@@ -2,6 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper/core";
 import react from "../assets/img/webp/react.webp";
 import php from "../assets/img/webp/php.webp";
 import javascript from "../assets/img/webp/javascript.webp";
@@ -17,126 +18,68 @@ import python from "../assets/img/webp/python.webp";
 import shp from "../assets/img/webp/sharepoint.webp";
 // Import Swiper styles
 import "swiper/css";
+SwiperCore.use([Autoplay]);
 function Skills() {
   const skillz = [
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 85,
       src: javascript,
       alt: "JavaScript",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 70,
       src: react,
       alt: "React",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 60,
       src: php,
       alt: "PHP",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 85,
       src: html,
       alt: "HTML",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 60,
       src: ai,
       alt: "AI",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 70,
       src: cpp,
       alt: "C++",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 85,
       src: css,
       alt: "CSS / SASS",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 100,
       src: excel,
       alt: "Excel",
-      fontSize: 24,
     },
-    // {
-    //   w: "inherit",
-    //   h: "auto",
-    //   marginTop: -40,
-    //   marginBottom: -40,
-    //   transform: "rotate(90deg)",
-    //   value: 90,
-    //   src: mongodb,
-    //   alt: "mongodb",
-    //   fontSize: 24,
-    // },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 85,
       src: mysql,
       alt: "SQL",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 85,
       src: prestashop,
       alt: "PrestaShop",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 60,
       src: python,
       alt: "Python",
-      fontSize: 24,
     },
     {
-      w: "inherit",
-      h: "auto",
-      marginTop: 0,
       value: 70,
       src: shp,
       alt: "Sharepoint",
-      fontSize: 24,
     },
   ];
 
@@ -158,7 +101,11 @@ function Skills() {
                 <Swiper
                   spaceBetween={50}
                   slidesPerView={4}
-                  data-swiper-autoplay="2000"
+                  autoplay={{
+                    delay: 2500,
+                  }}
+                  loop={true}
+                  loopFillGroupWithBlank={true}
                 >
                   {skillz.map((skill, index) => {
                     return (

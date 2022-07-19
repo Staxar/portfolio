@@ -7,18 +7,18 @@ function Home() {
   return (
     <section
       id="home"
-      className="banner mt-0 bg-cover	bg-no-repeat bg-top-center pt-64 pb-60"
+      className="pt-64 mt-0 bg-no-repeat bg-cover banner bg-top-center pb-60"
     >
-      <div className="m-auto px-5 w-3/4">
-        <div className="columns-2 w-full">
-          <div className="w-auto flex flex-col">
+      <div className="w-3/4 px-5 m-auto">
+        <div className="w-full columns-2">
+          <div className="flex flex-col w-auto">
             <span className="border-solid border-2 bg-gradient-to-r from-violet-500 to-fuchsia-500 py-2 px-2.5 font-bold inline-block mb-4 text-lg text-center w-1/2">
               Welcome to my Portfolio
             </span>
-            <h1 className="text-6xl font-bold tracking-wide leading-none mb-5 block">
+            <h1 className="block mb-5 text-6xl font-bold leading-none tracking-wide">
               Hi! I'm Marcin
             </h1>
-            <span className="text-6xl font-bold tracking-wide leading-none mb-5 block static h-14">
+            <span className="static block mb-5 text-6xl font-bold leading-none tracking-wide h-14">
               <TypeAnimation
                 cursor={false}
                 component={"span"}
@@ -28,14 +28,14 @@ function Home() {
               />
             </span>
 
-            <p className="text-lg tracking-wide	w-full">
+            <p className="w-full text-lg tracking-wide">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
           </div>
-          <div className="w-3/4 flex m-auto">
+          <div className="flex w-3/4 m-auto">
             <img
               alt="banner"
               src={astronaut}
