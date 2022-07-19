@@ -6,28 +6,28 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 function NavBar() {
   return (
     <section className="navbar">
-      <nav className="nav py-4 fixed w-full top-0 z-50 flex-wrap justify-start flex items-center">
-        <div className="container mx-auto flex flex-wrap items-center justify-between w-full">
+      <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-start w-full py-4 nav">
+        <div className="container flex flex-wrap items-center justify-between w-full mx-auto">
           <a href="/" className="w-2">
             <h1>Logo</h1>
           </a>
-          <div className="flex basis-auto grow items-center">
-            <div className="flex-row ml-auto flex pl-0 mb-0 list-none">
+          <div className="flex items-center basis-auto grow">
+            <div className="flex flex-row pl-0 mb-0 ml-auto list-none">
               <a
                 href="#home"
-                className="opacity-100 font-normal text-white text-lg tracking-wider mx-6"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Home
               </a>
               <a
                 href="#skills"
-                className="opacity-100 font-normal text-white text-lg tracking-wider mx-6"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Skills
               </a>
               <a
                 href="#project"
-                className="opacity-100 font-normal text-white text-lg tracking-wider mx-6"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Project
               </a>
@@ -36,7 +36,7 @@ function NavBar() {
               <div className="inline-block ml-3.5">
                 <a
                   href="www.linkedin.com"
-                  className="bg-slate-300 w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white"
+                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white linkedin"
                 >
                   <img
                     alt="linkedin"
@@ -45,8 +45,8 @@ function NavBar() {
                   ></img>
                 </a>
                 <a
-                  href="www.linkedin.com"
-                  className="bg-slate-300 w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white"
+                  href="www.facebook.com"
+                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white facebook"
                 >
                   <img
                     alt="facebook"
@@ -55,8 +55,8 @@ function NavBar() {
                   ></img>
                 </a>
                 <a
-                  href="www.linkedin.com"
-                  className="bg-slate-300 w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white"
+                  href="www.instagram.com"
+                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white instagram"
                 >
                   <img
                     alt="instagram"
