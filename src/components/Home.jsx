@@ -1,5 +1,3 @@
-import React from "react";
-// import headerimg from "../assets/img/header-img.svg";
 import astronaut from "../assets/img/webp/astronaut.webp";
 import TypeAnimation from "react-type-animation";
 
@@ -18,7 +16,7 @@ function Home() {
             <h1 className="block mb-5 text-6xl font-bold leading-none tracking-wide">
               Hi! I'm Marcin
             </h1>
-            <span className="static block mb-5 text-6xl font-bold leading-none tracking-wide h-14">
+            <span className="static block mb-5 text-6xl font-bold leading-none tracking-wide h-14 w-max">
               <TypeAnimation
                 cursor={false}
                 component={"span"}
@@ -40,6 +38,8 @@ function Home() {
               alt="banner"
               src={astronaut}
               className="animate-bounceslow"
+              width="600"
+              height="400"
             ></img>
           </div>
         </div>

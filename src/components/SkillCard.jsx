@@ -17,7 +17,7 @@ const SkillCard = ({ value, src, alt }) => {
       <div className="box relative flex flex-col items-center justify-center rounded-full bg-[#292929] before:absolute before:content-[''] before:rounded-full">
         <p className="w-1/2">
           <span className="text-4xl font-bold num">
-            <img src={src} alt={alt}></img>
+            <img src={src} alt={alt} width="600" height="400"></img>
           </span>
         </p>
         <p className="text-base text-neutral-300">{alt}</p>
