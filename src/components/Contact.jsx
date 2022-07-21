@@ -53,7 +53,7 @@ function Contact() {
                 </div>
                 <form action="" className="w-5/12 text-slate-800">
                   <label className="block p-4">
-                    <h3 className="text-lg font-bold">Full name</h3>
+                    <h3 className="text-lg font-bold text-white">Full name</h3>
                     <input
                       type="text"
                       className="mt-0
@@ -65,7 +65,9 @@ function Contact() {
                     />
                   </label>
                   <label className="block p-4">
-                    <h3 className="text-lg font-bold">Email address</h3>
+                    <h3 className="text-lg font-bold text-white">
+                      Email address
+                    </h3>
                     <input
                       type="email"
                       className="mt-0
@@ -77,7 +79,7 @@ function Contact() {
                     />
                   </label>
                   <label className="block p-4">
-                    <h3 className="text-lg font-bold">Message</h3>
+                    <h3 className="text-lg font-bold text-white">Message</h3>
                     <TextareaAutosize
                       aria-label="empty textarea"
                       placeholder="Empty"
