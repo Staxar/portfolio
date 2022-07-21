@@ -93,7 +93,7 @@ function Certificates() {
     },
   ];
   return (
-    <section id="contact" className="">
+    <section id="certificates" className="">
       <div className="w-3/4 px-5 py-5 m-auto">
         <div className="flex flex-wrap m-auto">
           <div className="w-full">
