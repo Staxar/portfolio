@@ -25,13 +25,13 @@ function Home() {
                 repeat={Infinity}
               />
             </span>
-
-            <p className="w-full text-lg tracking-wide">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+            <div className="">
+              {" "}
+              <p className="w-full text-lg tracking-wide">
+                Passionate about programming for many years, fan of winter
+                sports and cycling.
+              </p>
+            </div>
           </div>
           <div className="flex w-3/4 m-auto">
             <img

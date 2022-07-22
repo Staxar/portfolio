@@ -168,7 +168,7 @@ function Contact() {
                     <h3 className="text-lg font-bold text-white">Message</h3>
                     <TextareaAutosize
                       aria-label="empty textarea"
-                      placeholder="Empty"
+                      placeholder="Your message"
                       style={{ width: "100%" }}
                       name="message"
                       required={true}

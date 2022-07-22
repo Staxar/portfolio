@@ -7,6 +7,9 @@ module.exports = {
         bounceslow: "bounce 3s infinite",
       },
     },
+    screens: {
+      sm: "250px",
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };

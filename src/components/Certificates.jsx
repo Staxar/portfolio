@@ -12,7 +12,6 @@ import certificate_10 from "../assets/img/webp/certificates/Excel Certiport.webp
 import certificate_11 from "../assets/img/webp/certificates/Google.webp";
 
 import { experimentalStyled as styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
