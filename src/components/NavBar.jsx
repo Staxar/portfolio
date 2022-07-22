@@ -20,7 +20,7 @@ function NavBar() {
           colorChange ? "bg-black ease-linear duration-1000" : "navbar"
         }`}
       >
-        <div className="container flex flex-wrap items-center justify-between w-full ml-auto mr-[20%]">
+        <div className="container flex flex-wrap items-center justify-end w-full ml-auto mr-[5%]">
           <div className="flex items-center basis-auto grow">
             <div className="flex flex-row pl-0 mb-0 ml-auto list-none">
               <a
