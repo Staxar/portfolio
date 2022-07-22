@@ -20,30 +20,30 @@ function NavBar() {
           colorChange ? "bg-black ease-linear duration-1000" : "navbar"
         }`}
       >
-        <div className="container flex flex-wrap items-center justify-between w-full mx-auto">
+        <div className="container flex flex-wrap items-center justify-between w-full ml-auto mr-[20%]">
           <div className="flex items-center basis-auto grow">
             <div className="flex flex-row pl-0 mb-0 ml-auto list-none">
               <a
                 href="#home"
-                className="text-lg font-normal tracking-wider text-white opacity-100 sm:text-sm"
+                className="text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Home
               </a>
               <a
                 href="#skills"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100 sm:text-sm"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Skills
               </a>
               <a
                 href="#project"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100 sm:text-sm"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Project
               </a>
               <a
                 href="#contact"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100 sm:text-sm"
+                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
               >
                 Contact
               </a>
