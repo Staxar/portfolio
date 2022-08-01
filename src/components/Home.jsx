@@ -25,13 +25,6 @@ function Home() {
                 repeat={Infinity}
               />
             </span>
-            <div className="">
-              {" "}
-              <p className="w-full text-lg tracking-wide">
-                Passionate about programming for many years, fan of winter
-                sports and cycling.
-              </p>
-            </div>
           </div>
           <div className="flex w-3/4 m-auto">
             <img

@@ -14,6 +14,7 @@ import certificate_11 from "../assets/img/webp/certificates/Google.webp";
 import { experimentalStyled as styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import { Box } from "@mui/material";
 
 function Certificates() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -97,30 +98,32 @@ function Certificates() {
         <div className="flex flex-wrap m-auto">
           <div className="w-full">
             <div className="p-12 text-center">
-              <h2 className="block mb-5 text-6xl font-bold leading-none tracking-wide">
+              <h2 className="block mb-5 text-6xl font-bold leading-none tracking-wide md:text-lg sm:text-lg">
                 Certificates
               </h2>
-              <Grid
-                container
-                spacing={{ xs: 2, md: 3 }}
-                columns={{ xs: 4, sm: 8, md: 12 }}
-              >
-                {certificates.map((certificate, index) => {
-                  return (
-                    <Grid item xs={2} sm={4} md={4} key={index}>
-                      <Item key={certificate.src}>
-                        <p className="p-1 font-bold">{certificate.alt}</p>
-                        <ModalImage
-                          key={certificate.id}
-                          small={certificate.src}
-                          large={certificate.src}
-                          alt={certificate.alt}
-                        />
-                      </Item>
-                    </Grid>
-                  );
-                })}
-              </Grid>
+              <Box sx={{ flexGrow: 1 }}>
+                <Grid
+                  container
+                  spacing={{ xs: 1, md: 3 }}
+                  columns={{ xs: 4, sm: 8, md: 12 }}
+                >
+                  {certificates.map((certificate, index) => {
+                    return (
+                      <Grid item xs={2} sm={4} md={4} key={index}>
+                        <Item key={certificate.src}>
+                          <p className="p-1 font-bold">{certificate.alt}</p>
+                          <ModalImage
+                            key={certificate.id}
+                            small={certificate.src}
+                            large={certificate.src}
+                            alt={certificate.alt}
+                          />
+                        </Item>
+                      </Grid>
+                    );
+                  })}
+                </Grid>
+              </Box>
             </div>
           </div>
         </div>

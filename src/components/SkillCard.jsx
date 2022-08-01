@@ -1,7 +1,6 @@
 // import CircularProgressBar from "./index";
 import { useState, useEffect } from "react";
 import "swiper/css";
-import "../App.css";
 const SkillCard = ({ value, src, alt }) => {
   const [style, setStyle] = useState(`rotate(${0}deg)`);
 

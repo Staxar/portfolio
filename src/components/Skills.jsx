@@ -100,7 +100,7 @@ function Skills() {
               <div className="my-9">
                 <Swiper
                   spaceBetween={50}
-                  slidesPerView={4}
+                  slidesPerView={1}
                   autoplay={{
                     delay: 2500,
                   }}

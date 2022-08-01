@@ -14,12 +14,12 @@ function NavBar() {
   };
   window.addEventListener("scroll", changeNavbarColor);
   return (
-    <section className="navbar">
-      <nav
-        className={`fixed top-0 z-50 flex flex-wrap items-center justify-start w-full py-4 nav ${
-          colorChange ? "bg-black ease-linear duration-1000" : "navbar"
-        }`}
-      >
+    <nav
+      className={`fixed top-0 z-50 flex flex-wrap items-center justify-start w-full py-4 nav ${
+        colorChange ? "bg-black ease-linear duration-1000" : "navbar"
+      }`}
+    >
+      <section className="navbar">
         <div className="container flex flex-wrap items-center justify-end w-full ml-auto mr-[5%]">
           <div className="flex items-center basis-auto grow">
             <div className="flex flex-row pl-0 mb-0 ml-auto list-none">
@@ -90,8 +90,8 @@ function NavBar() {
             </span>
           </div>
         </div>
-      </nav>
-    </section>
+      </section>
+    </nav>
   );
 }
 
