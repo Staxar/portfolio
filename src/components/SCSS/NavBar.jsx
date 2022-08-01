@@ -44,7 +44,7 @@ function NavBar() {
                   <i className="nav__icon">
                     <About />
                   </i>{" "}
-                  About
+                  Skills
                 </a>
               </li>
               <li className="nav__item">
@@ -52,7 +52,7 @@ function NavBar() {
                   <i className="nav__icon">
                     <Fire />
                   </i>{" "}
-                  Events
+                  Projects
                 </a>
               </li>
               <li className="nav__item">
@@ -60,23 +60,7 @@ function NavBar() {
                   <i className="nav__icon">
                     <Map />
                   </i>{" "}
-                  Cities
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#profil" className="nav__link">
-                  <i className="nav__icon">
-                    <User />
-                  </i>{" "}
-                  Profil
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#contact" className="nav__link">
-                  <i className="nav__icon">
-                    <Phone />
-                  </i>{" "}
-                  Phone
+                  Contact
                 </a>
               </li>
             </ul>
@@ -86,13 +70,13 @@ function NavBar() {
           </div>
           |
           <a href="/" className="nav__logo">
-            <img alt="linkedin" src={navIcon1} className="w-5/12 z-1"></img>
+            <img alt="linkedin" src={navIcon1} className="nav__icons"></img>
           </a>
           <a href="/" className="nav__logo">
-            <img alt="facebook" src={navIcon2} className="w-5/12 z-1"></img>
+            <img alt="facebook" src={navIcon2} className="nav__icons"></img>
           </a>
           <a href="/" className="nav__logo">
-            <img alt="instagram" src={navIcon3} className="w-5/12 z-1"></img>
+            <img alt="instagram" src={navIcon3} className="nav__icons"></img>
           </a>
           <div className="nav__btns">
             <div className="nav__toggle" onClick={showMenu} id="nav-toggle">

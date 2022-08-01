@@ -67,14 +67,20 @@ img {
 
 /* ==================== LAYOUT ==================== */
 .container {
-  max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+.grid-item {
+  padding: 0.25rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 /*==================== NAV ====================*/

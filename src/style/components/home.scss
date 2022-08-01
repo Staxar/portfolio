@@ -1,3 +1,8 @@
+.home {
+  background-image: url(../../assets/img/webp/cosmic.webp);
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
 .home__ {
   &container {
     gap: 1rem;
@@ -6,6 +11,10 @@
     grid-template-columns: 0.5fr 3fr;
     padding-top: 3.5rem;
     align-items: center;
+  }
+  &spacing {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   &social {
     display: grid;
@@ -48,6 +57,11 @@
     color: var(--first-color);
     transition: 0.3s;
   }
+  &box {
+    border: solid 2px;
+    padding: 0.5rem;
+    background: linear-gradient(to right, #8b5cf6, #d946ef);
+  }
   .home__scroll-button:hover {
     transform: translateY(0.25rem);
   }
@@ -64,6 +78,22 @@
     font-size: 1.25rem;
   }
 }
+
 .animate-bounceslow {
   animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
+  -o-animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
