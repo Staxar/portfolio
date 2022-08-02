@@ -2,96 +2,83 @@ import { useState } from "react";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-
+import { ViewGrid, About, Fire, Home, Map, Close } from "../assets/Icons/Icons";
 function NavBar() {
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 1000) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+  const [active, setActive] = useState(false);
+
+  function showMenu() {
+    document
+      .getElementById("nav-menu")
+      .classList.add(active ? "" : "show-menu");
+    setActive((a) => !a);
+  }
+  function closeMenu() {
+    document.getElementById("nav-menu").classList.remove("show-menu");
+    setActive((a) => !a);
+  }
   return (
-    <nav
-      className={`fixed top-0 z-50 flex flex-wrap items-center justify-start w-full py-4 nav ${
-        colorChange ? "bg-black ease-linear duration-1000" : "navbar"
-      }`}
-    >
-      <section className="navbar">
-        <div className="container flex flex-wrap items-center justify-end w-full ml-auto mr-[5%]">
-          <div className="flex items-center basis-auto grow">
-            <div className="flex flex-row pl-0 mb-0 ml-auto list-none">
-              <a
-                href="#home"
-                className="text-lg font-normal tracking-wider text-white opacity-100"
-              >
-                Home
-              </a>
-              <a
-                href="#skills"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
-              >
-                Skills
-              </a>
-              <a
-                href="#project"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
-              >
-                Project
-              </a>
-              <a
-                href="#contact"
-                className="mx-6 text-lg font-normal tracking-wider text-white opacity-100"
-              >
-                Contact
-              </a>
-            </div>
-            <span className="flex items-center py-2">
-              <div className="flex ml-3.5">
-                <a
-                  href="https://www.linkedin.com"
-                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white linkedin"
-                >
-                  <img
-                    alt="linkedin"
-                    src={navIcon1}
-                    className="w-5/12 z-1"
-                    width="600"
-                    height="400"
-                  ></img>
+    <section className="header">
+      <header className="header" id="header">
+        <nav className="container nav">
+          <div className="nav__menu" id="nav-menu">
+            <ul className="grid nav__list">
+              <li className="nav__item">
+                <a href="#home" className="nav__link active-link">
+                  <i className="nav__icon">
+                    <Home />
+                  </i>{" "}
+                  Home
                 </a>
-                <a
-                  href="https://www.facebook.com"
-                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white facebook"
-                >
-                  <img
-                    alt="facebook"
-                    src={navIcon2}
-                    className="w-5/12 z-1"
-                    width="600"
-                    height="400"
-                  ></img>
+              </li>
+              <li className="nav__item">
+                <a href="#about" className="nav__link">
+                  <i className="nav__icon">
+                    <About />
+                  </i>{" "}
+                  Skills
                 </a>
-                <a
-                  href="https://www.instagram.com"
-                  className="w-11 h-11 inline-flex rounded-full mr-1.5 justify-center border-1 border-white instagram"
-                >
-                  <img
-                    alt="instagram"
-                    src={navIcon3}
-                    className="w-5/12 z-1"
-                    width="600"
-                    height="400"
-                  ></img>
+              </li>
+              <li className="nav__item">
+                <a href="#events" className="nav__link">
+                  <i className="nav__icon">
+                    <Fire />
+                  </i>{" "}
+                  Projects
                 </a>
-              </div>
-            </span>
+              </li>
+              <li className="nav__item">
+                <a href="#cities" className="nav__link">
+                  <i className="nav__icon">
+                    <Map />
+                  </i>{" "}
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <i className="nav__close" id="nav-close" onClick={closeMenu}>
+              <Close />
+            </i>
           </div>
-        </div>
-      </section>
-    </nav>
+          |
+          <a href="/" className="nav__logo">
+            <img alt="linkedin" src={navIcon1} className="nav__icons"></img>
+          </a>
+          <a href="/" className="nav__logo">
+            <img alt="facebook" src={navIcon2} className="nav__icons"></img>
+          </a>
+          <a href="/" className="nav__logo">
+            <img alt="instagram" src={navIcon3} className="nav__icons"></img>
+          </a>
+          <div className="nav__btns">
+            <div className="nav__toggle" onClick={showMenu} id="nav-toggle">
+              <i className="nav__icon">
+                <ViewGrid />
+              </i>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
   );
 }
 

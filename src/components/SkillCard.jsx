@@ -1,4 +1,3 @@
-// import CircularProgressBar from "./index";
 import { useState, useEffect } from "react";
 import "swiper/css";
 const SkillCard = ({ value, src, alt }) => {
@@ -12,20 +11,17 @@ const SkillCard = ({ value, src, alt }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center rounded-full block_dot w-[11.25rem] h-[11.25rem] text-4xl font-bold">
-      <div className="box relative flex flex-col items-center justify-center rounded-full bg-[#292929] before:absolute before:content-[''] before:rounded-full">
-        <p className="w-1/2">
-          <span className="text-4xl font-bold num">
+    <div className="skills__card">
+      <div className="skills__box">
+        <p className="skills__img">
+          <span className="skills__text">
             <img src={src} alt={alt} width="600" height="400"></img>
           </span>
         </p>
-        <p className="text-base text-neutral-300">{alt}</p>
+        <p className="skills__text">{alt}</p>
       </div>
-      <span
-        className="dots block absolute z-[2] w-full h-full rounded-full after:absolute after:content-[''] after:w-2.5 after:h-2.5 after:top-1 after:left-1/2 after:rounded-full after:bg-[#b7b5b5]  "
-        style={styles}
-      ></span>
-      <svg className="absolute w-full h-full fill-[none] rotate-[-90deg]">
+      <span className="skills__dots dots" style={styles}></span>
+      <svg className="skills__svg">
         <defs>
           <linearGradient id="gradientStyle">
             <stop offset="0%" stopColor="#e91e63" />

@@ -1,10 +1,10 @@
 import "./style/index.scss";
-import Home from "./components/SCSS/Home";
-import NavBar from "./components/SCSS/NavBar";
-import Projects from "./components/SCSS/Projects";
-import Skills from "./components/SCSS/Skills";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Certificates from "./components/SCSS/Certificates";
+import Certificates from "./components/Certificates";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Skills />
       <Projects />
       <Certificates />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }
