@@ -10,20 +10,9 @@ import certificate_8 from "../assets/img/webp/certificates/tvm66-vuvoc.webp";
 import certificate_9 from "../assets/img/webp/certificates/tx8dy-x30x3.webp";
 import certificate_10 from "../assets/img/webp/certificates/Excel Certiport.webp";
 import certificate_11 from "../assets/img/webp/certificates/Google.webp";
-
-import { experimentalStyled as styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 
 function Certificates() {
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  }));
-
   const certificates = [
     {
       id: 0,
@@ -92,37 +81,30 @@ function Certificates() {
     },
   ];
   return (
-    <section id="certificates" className="">
-      <div className="w-3/4 px-5 py-5 m-auto">
-        <div className="flex flex-wrap m-auto">
-          <div className="w-full">
-            <div className="p-12 text-center">
-              <h2 className="block mb-5 text-6xl font-bold leading-none tracking-wide">
-                Certificates
-              </h2>
-              <Grid
-                container
-                spacing={{ xs: 2, md: 3 }}
-                columns={{ xs: 4, sm: 8, md: 12 }}
-              >
-                {certificates.map((certificate, index) => {
-                  return (
-                    <Grid item xs={2} sm={4} md={4} key={index}>
-                      <Item key={certificate.src}>
-                        <p className="p-1 font-bold">{certificate.alt}</p>
-                        <ModalImage
-                          key={certificate.id}
-                          small={certificate.src}
-                          large={certificate.src}
-                          alt={certificate.alt}
-                        />
-                      </Item>
-                    </Grid>
-                  );
-                })}
-              </Grid>
-            </div>
-          </div>
+    <section id="certificates" className="section certificates">
+      <div className="container">
+        <h2 className="section__title">Certificates</h2>
+        <p className="section__subtitle">My certificates</p>
+        <div className="grid certificates__grid">
+          {certificates.map((certificate, index) => {
+            return (
+              <Paper className="certificates__paper">
+                <div className="certificates__item">
+                  <p className="certificates__subtitle">{certificate.alt}</p>
+
+                  <ModalImage
+                    key={certificate.id}
+                    small={certificate.src}
+                    large={certificate.src}
+                    alt={certificate.alt}
+                  />
+                </div>
+                <p className="certificates__certificateby">
+                  {certificate.certificateby}
+                </p>
+              </Paper>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -59,7 +59,7 @@ function Contact() {
     },
   });
   return (
-    <section id="contact" className="">
+    <section className="contact section" id="contact">
       <div className="">
         <Modal
           open={open}
@@ -84,115 +84,104 @@ function Contact() {
           </Box>
         </Modal>
       </div>
-      <div className="w-3/4 px-5 py-5 m-auto">
-        <div className="flex flex-wrap m-auto">
-          <div className="w-full">
-            <div className="p-12 text-center">
-              <h2 className="block mb-5 text-6xl font-bold leading-none tracking-wide">
-                Contact
-              </h2>
-              <p className="text-lg tracking-wide my-9">Get in touch</p>
+      <h2 className="section__title">Contact Me</h2>
+      <span className="section__subtitle">Get in touch</span>
 
-              <div className="flex w-full columns-2 place-content-between">
-                <div className="text-start">
-                  <div className="flex p-4">
-                    <i className="self-center text-[cornflowerblue]">
-                      <PhoneIcon className="w-5 h-5 text-blue-500 mr-2.5" />
-                    </i>
-                    <div className="">
-                      <h3 className="text-lg font-bold">Call me</h3>
-                      <span>+48 502 036 094</span>
-                    </div>
-                  </div>
-                  <div className="flex p-4">
-                    <i className="self-center text-[cornflowerblue]">
-                      <MailIcon className="w-5 h-5 text-blue-500 mr-2.5" />
-                    </i>
-                    <div className="">
-                      <h3 className="text-lg font-bold">E-mail</h3>
-                      <span>
-                        <a href="mailto:marcin.kepno@gmail.com">
-                          marcin.kepno@gmail.com
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex p-4">
-                    <i className="self-center text-[cornflowerblue]">
-                      <LocationMarkerIcon className="w-5 h-5 text-blue-500 mr-2.5" />
-                    </i>
-                    <div className="">
-                      <h3 className="text-lg font-bold">Location</h3>
-                      <span>Poland - Wrocław</span>
-                    </div>
-                  </div>
-                </div>
-                <form
-                  ref={form}
-                  onSubmit={sendEmail}
-                  className="w-5/12 text-slate-800"
-                >
-                  <label className="block p-4">
-                    <h3 className="text-lg font-bold text-white">Full name</h3>
-                    <input
-                      type="text"
-                      name="user_name"
-                      required={true}
-                      alt="Full name"
-                      className="mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black rounded text-center"
-                    />
-                  </label>
-                  <label className="block p-4">
-                    <h3 className="text-lg font-bold text-white">
-                      Email address
-                    </h3>
-                    <input
-                      type="email"
-                      name="user_email"
-                      required={true}
-                      alt="Email address"
-                      className="mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black rounded text-center"
-                    />
-                  </label>
-                  <label className="block p-4">
-                    <h3 className="text-lg font-bold text-white">Message</h3>
-                    <TextareaAutosize
-                      aria-label="empty textarea"
-                      placeholder="Your message"
-                      style={{ width: "100%" }}
-                      name="message"
-                      required={true}
-                      maxLength="1000"
-                    />
-                  </label>
+      <div className="container grid contact__container">
+        <div>
+          <div className="contact__information">
+            <PhoneIcon className="contact__icons" />
 
-                  <div className="inline-flex items-center">
-                    <button
-                      type="submit"
-                      value="Send"
-                      className="inline-flex p-4 text-white rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500"
-                    >
-                      Send Message
-                      <i className="ml-1">
-                        <ArrowRightIcon className="w-5 h-5 text-blue-500" />
-                      </i>
-                    </button>
-                  </div>
-                </form>
-              </div>
+            <div>
+              <h3 className="contact__title">Call Me</h3>
+              <span className="contact__subtitle">502-036-094</span>
+            </div>
+          </div>
+          <div className="contact__information">
+            <MailIcon className="contact__icons" />
+            <div>
+              <h3 className="contact__title">Email</h3>
+              <a href="mailto:marcin.kepno@gmail.com">
+                <span className="contact__subtitle">
+                  marcin.kepno@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div className="contact__information">
+            <LocationMarkerIcon className="contact__icons" />
+
+            <div>
+              <h3 className="contact__title">Location</h3>
+              <span className="contact__subtitle">Poland - Wrocław</span>
             </div>
           </div>
         </div>
+
+        <form
+          action=""
+          className="grid contact__form"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <div className="grid">
+            <div className="contact__content">
+              <label for="" className="contact__label">
+                Name
+              </label>
+              <input
+                type="text"
+                className="contact__input"
+                name="user_name"
+                required={true}
+                alt="Full name"
+              ></input>
+            </div>
+            <div className="contact__content">
+              <label for="" className="contact__label">
+                Emali
+              </label>
+              <input
+                className="contact__input"
+                type="email"
+                name="user_email"
+                required={true}
+                alt="Email address"
+              ></input>
+            </div>
+            <div className="contact__content">
+              <label for="" className="contact__label">
+                Project
+              </label>
+              <input type="text" className="contact__input"></input>
+            </div>
+            <div className="contact__content">
+              <label for="" className="contact__label">
+                Message
+              </label>
+              <TextareaAutosize
+                aria-label="empty textarea"
+                placeholder="Your message"
+                style={{ width: "100%" }}
+                name="message"
+                required={true}
+                maxLength="1000"
+                className="contact__input"
+              />
+            </div>
+            <div className="contact__button">
+              {" "}
+              <button
+                type="submit"
+                value="Send Message"
+                className="button button--flex button--small"
+              >
+                Send Message
+                <ArrowRightIcon />
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   );

@@ -84,40 +84,39 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="">
-      <div className="w-3/4 px-5 py-5 m-auto">
-        <div className="flex flex-wrap m-auto">
-          <div className="w-full">
-            <div className="p-12 text-center border-2 border-solid rounded-3xl">
-              <h2 className="mb-5 text-6xl font-bold leading-none tracking-wide">
-                Skills
-              </h2>
-              <p className="text-lg tracking-wide my-9">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text.
-              </p>
-              <div className="my-9">
-                <Swiper
-                  spaceBetween={50}
-                  slidesPerView={4}
-                  autoplay={{
-                    delay: 2500,
-                  }}
-                  loop={true}
-                  loopFillGroupWithBlank={true}
-                >
-                  {skillz.map((skill, index) => {
-                    return (
-                      <SwiperSlide data-swiper-autoplay="2000" key={index}>
-                        <SkillCard key={index} {...skill} />
-                      </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
-              </div>
-            </div>
-          </div>
+    <section id="skills" className="skills section">
+      <div className="container">
+        <h2 className="section__title">Skills</h2>
+        <p className="section__subtitle">My technical skills</p>
+        <div className="skills__container">
+          <Swiper
+            breakpoints={{
+              400: {
+                slidesPerView: 2,
+              },
+              568: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
+            spaceBetween={5}
+            autoplay={{
+              delay: 2500,
+            }}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            className="swiper-container"
+          >
+            {skillz.map((skill, index) => {
+              return (
+                <SwiperSlide data-swiper-autoplay="2000" key={index}>
+                  <SkillCard key={index} {...skill} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </section>

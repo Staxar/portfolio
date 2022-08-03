@@ -43,26 +43,14 @@ function Projects() {
   ];
 
   return (
-    <section id="project" className="">
-      <div className="m-auto px-5 w-3/4 py-5">
-        <div className="flex flex-wrap m-auto">
-          <div className="w-full">
-            <div className="text-center p-12">
-              <h2 className="text-6xl font-bold tracking-wide leading-none mb-5 block">
-                Projects
-              </h2>
-              <p className="text-lg tracking-wide my-9">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text.
-              </p>
-              <div className="grid grid-rows-2 grid-flow-col gap-4">
-                {projects.map((project, index) => {
-                  return <ProjectCard key={index} {...project} />;
-                })}
-              </div>
-            </div>
-          </div>
+    <section id="projects" className="section projects">
+      <div className="container">
+        <h2 className="section__title">Projects</h2>
+        <p className="section__subtitle">My projects</p>
+        <div className="grid projects__grid">
+          {projects.map((project, index) => {
+            return <ProjectCard key={index} {...project} />;
+          })}
         </div>
       </div>
     </section>
