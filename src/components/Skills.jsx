@@ -85,26 +85,39 @@ function Skills() {
 
   return (
     <section id="skills" className="skills section">
-      <h2 className="section__title">Skills</h2>
-      <p className="section__subtitle">My technical skills</p>
-      <div className="skills__container">
-        <Swiper
-          spaceBetween={5}
-          slidesPerView={2}
-          autoplay={{
-            delay: 2500,
-          }}
-          loop={true}
-          loopFillGroupWithBlank={true}
-        >
-          {skillz.map((skill, index) => {
-            return (
-              <SwiperSlide data-swiper-autoplay="2000" key={index}>
-                <SkillCard key={index} {...skill} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+      <div className="container">
+        <h2 className="section__title">Skills</h2>
+        <p className="section__subtitle">My technical skills</p>
+        <div className="skills__container">
+          <Swiper
+            breakpoints={{
+              400: {
+                slidesPerView: 2,
+              },
+              568: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
+            spaceBetween={5}
+            autoplay={{
+              delay: 2500,
+            }}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            className="swiper-container"
+          >
+            {skillz.map((skill, index) => {
+              return (
+                <SwiperSlide data-swiper-autoplay="2000" key={index}>
+                  <SkillCard key={index} {...skill} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

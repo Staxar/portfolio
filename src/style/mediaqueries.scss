@@ -28,6 +28,9 @@
       margin-right: var(--mb-2);
     }
   }
+  .swiper-container {
+    width: 400px;
+  }
 }
 /* Medium devices */
 @media screen and (min-width: 568px) {
@@ -65,8 +68,6 @@
     margin: 0;
   }
   .section {
-    padding: 6rem 0 2rem;
-
     &__subtitle {
       margin-bottom: 4rem;
     }
@@ -97,6 +98,7 @@
     }
   }
   .home {
+    height: 100vh;
     &__container {
       row-gap: 5rem;
     }
@@ -113,62 +115,30 @@
     &__scroll-button {
       margin-left: 3rem;
     }
-  }
-  .about {
-    &__container {
-      column-gap: 5rem;
-    }
-    &__img {
-      width: 350px;
-      height: auto;
-    }
-    &__description {
-      text-align: initial;
-    }
-    &__info {
-      justify-content: space-between;
-    }
-    &__buttons {
-      justify-content: initial;
+    &__grid {
+      grid-template-columns: 60% 30%;
     }
   }
-  .events {
-    &__container {
-      grid-template-columns: repeat(3, 218px);
-      justify-content: center;
-    }
-    &__icon {
-      font-size: 2rem;
-    }
-    &__modal-content {
-      width: 450px;
-    }
+  .swiper-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: -webkit-center;
   }
-  .cities {
-    &__content {
-      align-items: center;
-    }
-    &__img {
-      width: 320px;
-    }
+  .projects__grid {
+    grid-template-columns: auto auto auto;
   }
-  .footer {
-    &__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    &__bg {
-      padding: 3rem 0 3.5rem;
-    }
-    &__links {
-      flex-direction: row;
-      column-gap: 2rem;
-    }
-    &__socials {
-      justify-self: flex-end;
-    }
-    &__copy {
-      margin-top: 4.5rem;
-    }
+  .certificates__grid {
+    grid-template-columns: auto auto auto;
+  }
+  .contact__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact__form {
+    width: 40%;
+  }
+  .contact__button {
+    justify-self: left;
   }
 }
 /* Large devices */

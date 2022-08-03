@@ -101,7 +101,11 @@ function Contact() {
             <MailIcon className="contact__icons" />
             <div>
               <h3 className="contact__title">Email</h3>
-              <span className="contact__subtitle">marcin.kepno@gmail.com</span>
+              <a href="mailto:marcin.kepno@gmail.com">
+                <span className="contact__subtitle">
+                  marcin.kepno@gmail.com
+                </span>
+              </a>
             </div>
           </div>
           <div className="contact__information">
@@ -165,7 +169,7 @@ function Contact() {
                 className="contact__input"
               />
             </div>
-            <div className="">
+            <div className="contact__button">
               {" "}
               <button
                 type="submit"
