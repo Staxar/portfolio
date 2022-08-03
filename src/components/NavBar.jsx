@@ -16,9 +16,23 @@ function NavBar() {
     document.getElementById("nav-menu").classList.remove("show-menu");
     setActive((a) => !a);
   }
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 1000) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <section className="header">
-      <header className="header" id="header">
+      <header
+        className={`header ${
+          colorChange ? "header__color" : "header__tranparent"
+        }`}
+        id="header"
+      >
         <nav className="container nav">
           <div className="nav__menu" id="nav-menu">
             <ul className="grid nav__list">
@@ -31,7 +45,7 @@ function NavBar() {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#about" className="nav__link">
+                <a href="#skills" className="nav__link">
                   <i className="nav__icon">
                     <About />
                   </i>{" "}
@@ -39,7 +53,7 @@ function NavBar() {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#events" className="nav__link">
+                <a href="#projects" className="nav__link">
                   <i className="nav__icon">
                     <Fire />
                   </i>{" "}
@@ -47,7 +61,7 @@ function NavBar() {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#cities" className="nav__link">
+                <a href="#contact" className="nav__link">
                   <i className="nav__icon">
                     <Map />
                   </i>{" "}
@@ -59,7 +73,7 @@ function NavBar() {
               <Close />
             </i>
           </div>
-          |
+          <div className="nav__pipe">|</div>
           <a href="/" className="nav__logo">
             <img alt="linkedin" src={navIcon1} className="nav__icons"></img>
           </a>

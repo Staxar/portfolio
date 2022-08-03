@@ -4,7 +4,14 @@
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
+}
+.header__tranparent {
   background-color: transparent;
+}
+.header__color {
+  background-color: var(--body-color);
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
 }
 .nav {
   max-height: 968px;

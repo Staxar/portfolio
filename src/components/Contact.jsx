@@ -177,7 +177,9 @@ function Contact() {
                 className="button button--flex button--small"
               >
                 Send Message
-                <ArrowRightIcon />
+                <i className="contact__icon_button">
+                  <ArrowRightIcon />
+                </i>
               </button>
             </div>
           </div>
