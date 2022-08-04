@@ -1,4 +1,4 @@
-#Checkout the Vercel deploy
+# Checkout the Vercel deploy
 [Portfolio](https://portfolio-staxar.vercel.app/)
 
 # Getting Started with Create React App
