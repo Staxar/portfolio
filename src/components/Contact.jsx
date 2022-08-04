@@ -78,7 +78,7 @@ function Contact() {
               </Typography>
             </ThemeProvider>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Thank you for a message, you will receive response within 3
+              Thank you htmlFor a message, you will receive response within 3
               business days.
             </Typography>
           </Box>
@@ -126,7 +126,7 @@ function Contact() {
         >
           <div className="grid">
             <div className="contact__content">
-              <label for="" className="contact__label">
+              <label htmlFor="user_name" className="contact__label">
                 Name
               </label>
               <input
@@ -135,10 +135,11 @@ function Contact() {
                 name="user_name"
                 required={true}
                 alt="Full name"
+                placeholder="Full name"
               ></input>
             </div>
             <div className="contact__content">
-              <label for="" className="contact__label">
+              <label htmlFor="email" className="contact__label">
                 Emali
               </label>
               <input
@@ -147,16 +148,23 @@ function Contact() {
                 name="user_email"
                 required={true}
                 alt="Email address"
+                placeholder="Email address"
               ></input>
             </div>
             <div className="contact__content">
-              <label for="" className="contact__label">
+              <label htmlFor="project" className="contact__label">
                 Project
               </label>
-              <input type="text" className="contact__input"></input>
+              <input
+                type="text"
+                className="contact__input"
+                name="project"
+                alt="project"
+                placeholder="Project"
+              ></input>
             </div>
             <div className="contact__content">
-              <label for="" className="contact__label">
+              <label htmlFor="message" className="contact__label">
                 Message
               </label>
               <TextareaAutosize

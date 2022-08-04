@@ -1,10 +1,10 @@
 import React from "react";
 import OneShot from "../assets/img/webp/OneShot.webp";
 import TestYourSelf from "../assets/img/webp/testoursefl.webp";
-import QuizFight from "../assets/img/Quiz Fight.png";
+import QuizFight from "../assets/img/webp/Quiz-Fight.webp";
 import ecb from "../assets/img/webp/ecb.webp";
-import ShP from "../assets/img/ShP.png";
-import freevent from "../assets/img/freevent.png";
+import ShP from "../assets/img/webp/ShP.webp";
+import freevent from "../assets/img/webp/freevent.webp";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {

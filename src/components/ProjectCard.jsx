@@ -8,7 +8,13 @@ const ProjectCard = ({ title, description, imgUrl }) => {
   return (
     <Card sx={{ maxWidth: 345, borderRadius: 5 }}>
       <CardActionArea>
-        <CardMedia component="img" height="auto" image={imgUrl} alt={title} />
+        <CardMedia
+          component="img"
+          height="auto"
+          image={imgUrl}
+          alt={title}
+          className="projects__img"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}

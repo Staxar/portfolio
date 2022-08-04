@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,7 +80,6 @@ img {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
 /*==================== NAV ====================*/
 .nav {
   max-height: 968px;
@@ -90,6 +90,10 @@ img {
 }
 .nav__pipe {
   visibility: hidden;
+}
+.nav__icons {
+  width: 100%;
+  height: 100%;
 }
 
 .nav__logo,
@@ -180,7 +184,7 @@ img {
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -189,7 +193,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
 }
 
 .button__icon {
