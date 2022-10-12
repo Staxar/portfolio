@@ -10,6 +10,7 @@ import certificate_8 from "../assets/img/webp/certificates/tvm66-vuvoc.webp";
 import certificate_9 from "../assets/img/webp/certificates/tx8dy-x30x3.webp";
 import certificate_10 from "../assets/img/webp/certificates/Excel Certiport.webp";
 import certificate_11 from "../assets/img/webp/certificates/Google.webp";
+import certificate_12 from "../assets/img/webp/certificates/Full-Stack React.webp";
 import small_certificate_1 from "../assets/img/webp/certificates/small/t1gvt-2930y.webp";
 import small_certificate_2 from "../assets/img/webp/certificates/small/t5hto-98pw1.webp";
 import small_certificate_3 from "../assets/img/webp/certificates/small/t75w3-8l0x8.webp";
@@ -21,6 +22,7 @@ import small_certificate_8 from "../assets/img/webp/certificates/small/tvm66-vuv
 import small_certificate_9 from "../assets/img/webp/certificates/small/tx8dy-x30x3.webp";
 import small_certificate_10 from "../assets/img/webp/certificates/small/Excel Certiport.webp";
 import small_certificate_11 from "../assets/img/webp/certificates/small/Google.webp";
+import small_certificate_12 from "../assets/img/webp/certificates/small/Full-Stack React small.webp";
 
 import Paper from "@mui/material/Paper";
 
@@ -101,6 +103,13 @@ function Certificates() {
       src: certificate_11,
       src_small: small_certificate_11,
       alt: "The Fundamental of Digital Marketing",
+    },
+    {
+      id: 11,
+      certificateby: "The Hong Kong University of Science and Technology",
+      src: certificate_12,
+      src_small: small_certificate_12,
+      alt: "Full stack web development with React",
     },
   ];
   return (
