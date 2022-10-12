@@ -94,7 +94,7 @@ function Contact() {
 
             <div>
               <h3 className="contact__title">Call Me</h3>
-              <span className="contact__subtitle">502-036-094</span>
+              <span className="contact__subtitle">+48 502-036-094</span>
             </div>
           </div>
           <div className="contact__information">
