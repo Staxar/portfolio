@@ -74,7 +74,10 @@ function NavBar() {
             </i>
           </div>
           <div className="nav__pipe">|</div>
-          <a href="/" className="nav__logo">
+          <a
+            href="https://www.linkedin.com/in/marcin-domaga%C5%82a-17a003251/"
+            className="nav__logo"
+          >
             <img alt="linkedin" src={navIcon1} className="nav__icons"></img>
           </a>
           <a href="/" className="nav__logo">
