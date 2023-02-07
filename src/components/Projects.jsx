@@ -5,6 +5,7 @@ import QuizFight from "../assets/img/webp/Quiz-Fight.webp";
 import ecb from "../assets/img/webp/ecb.webp";
 import ShP from "../assets/img/webp/ShP.webp";
 import freevent from "../assets/img/webp/freevent.webp";
+import axa from "../assets/img/webp/axa.webp";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -17,7 +18,7 @@ function Projects() {
     },
     {
       title: "European Central Bank",
-      description: "Working for ECB and skill-up",
+      description: "Development and skill-up",
       imgUrl: ecb,
     },
     {
@@ -39,6 +40,11 @@ function Projects() {
       title: "Freevent",
       description: "Design & Development",
       imgUrl: freevent,
+    },
+    {
+      title: "AXA Japan",
+      description: "Development",
+      imgUrl: axa,
     },
   ];
 
