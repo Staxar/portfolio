@@ -92,7 +92,7 @@ function Skills() {
           <Swiper
             breakpoints={{
               400: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
               568: {
                 slidesPerView: 2,
