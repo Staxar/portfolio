@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Modal from "@mui/material/Modal";
+
 function Contact() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -33,13 +34,13 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(process.env.REACT_emailsJS)
     emailjs
       .sendForm(
-        "service_u9bj4w7",
-        "template_qprq4fc",
+        process.env.REACT_APP_emailsJS,
+        process.env.REACT_APP_emailJStemplate,
         form.current,
-        "nIhmPFBmop2i99dmb"
+        process.env.REACT_APP_emailJSPass
       )
       .then(
         (result) => {
