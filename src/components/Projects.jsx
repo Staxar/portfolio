@@ -6,6 +6,7 @@ import ecb from "../assets/img/webp/ecb.webp";
 import ShP from "../assets/img/webp/ShP.webp";
 import freevent from "../assets/img/webp/freevent.webp";
 import axa from "../assets/img/webp/axa.webp";
+import briefcase from "../assets/img/webp/briefcase.webp"
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -45,6 +46,12 @@ function Projects() {
       title: "AXA Japan",
       description: "Development",
       imgUrl: axa,
+    },
+    {
+      title: "Business",
+      description: "Design&Development",
+      imgUrl: briefcase,
+      link: "https://business-layout.vercel.app/"
     },
   ];
 

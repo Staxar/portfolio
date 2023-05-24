@@ -4,9 +4,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-const ProjectCard = ({ title, description, imgUrl }) => {
+const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
-    <Card sx={{ maxWidth: 345, borderRadius: 5 }}>
+    <a href={link? link : null}>
+    <Card sx={{ maxWidth: 345, borderRadius: 5 }} >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -25,6 +26,7 @@ const ProjectCard = ({ title, description, imgUrl }) => {
         </CardContent>
       </CardActionArea>
     </Card>
+    </a>
   );
 };
 
