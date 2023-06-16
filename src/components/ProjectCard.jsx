@@ -6,26 +6,28 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
-    <a href={link? link : null}>
-    <Card sx={{ maxWidth: 345, borderRadius: 5 }} >
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="auto"
-          image={imgUrl}
-          alt={title}
-          className="projects__img"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <a href={link ? link : null}>
+      <Card
+        sx={{ maxWidth: 340, borderRadius: 5, minHeight: 170, height: "100%" }}
+      >
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="150px"
+            image={imgUrl}
+            alt={title}
+            className="projects__img"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
     </a>
   );
 };

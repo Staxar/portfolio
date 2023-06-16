@@ -6,7 +6,8 @@ import ecb from "../assets/img/webp/ecb.webp";
 import ShP from "../assets/img/webp/ShP.webp";
 import freevent from "../assets/img/webp/freevent.webp";
 import axa from "../assets/img/webp/axa.webp";
-import briefcase from "../assets/img/webp/briefcase.webp"
+import briefcase from "../assets/img/webp/briefcase.webp";
+import growlo from "../assets/img/webp/GROWLO.webp";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -51,7 +52,13 @@ function Projects() {
       title: "Business",
       description: "Design&Development",
       imgUrl: briefcase,
-      link: "https://business-layout.vercel.app/"
+      link: "https://business-layout.vercel.app/",
+    },
+    {
+      title: "GROWLO",
+      description: "Design & Mobile Development",
+      imgUrl: growlo,
+      link: "https://github.com/Staxar/GrowloExpoApp",
     },
   ];
 
